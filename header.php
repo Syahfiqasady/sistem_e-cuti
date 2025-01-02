@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <title>E-cuti Muamalat</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content=" MADRASAH DARUSSAKINAH" name="keywords">
-    <meta content="MADRASAH DARUSSAKINAH" name="description">
+    <meta content="your keywords" name="keywords">
+    <meta content="your keywords" name="description">
     <link rel="apple-touch-icon" sizes="180x180" href="<?=$site_url?>apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?=$site_url?>favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?=$site_url?>favicon-16x16.png">

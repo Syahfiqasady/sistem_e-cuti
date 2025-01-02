@@ -411,3 +411,45 @@ select{
         font-size: 0.9rem;
     }
 }
+
+  /* Announcement banner styles */
+  .announcement-banner {
+    background-color: #ffeb3b; 
+    color: #333; 
+    text-align: center;
+    padding: 15px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dismiss button styles */
+.announcement-banner .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Close button hover effect */
+.announcement-banner .close-btn:hover {
+    color: #000;
+}
+
+/* Page content padding to avoid overlap */
+.content {
+    margin-top: 80px; /* Space to avoid overlap with fixed banner */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}

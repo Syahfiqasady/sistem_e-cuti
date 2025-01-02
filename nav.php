@@ -1,7 +1,7 @@
 <?
 if (empty(get('id')) ){
-     session_unset(); // Unset all session variables
-    session_destroy(); // Destroy the session
+     session_unset(); 
+    session_destroy();
     go ($site_url);
     exit;
 }
@@ -17,21 +17,21 @@ if (empty(get('id')) ){
 
 <div class="mobile-bottom-nav__item <?= ($this_file == "senarai_permohonan.php") ? "mobile-bottom-nav__item--active" : "" ?>">
     <div class="mobile-bottom-nav__item-content" onclick="window.location.href='<?=$site_url?>senarai_permohonan.php';">
-        <i class="material-icons">list_alt</i>  <!-- Changed to list_alt -->
+        <i class="material-icons">list_alt</i> 
         Senarai
     </div>
 </div>
 
 <div class="mobile-bottom-nav__item <?= ($this_file == "permohonan_baru.php") ? "mobile-bottom-nav__item--active" : "" ?>">
     <div class="mobile-bottom-nav__item-content" onclick="window.location.href='<?=$site_url?>permohonan_baru.php';">
-        <i class="material-icons">add_circle</i> <!-- Changed to add_circle -->
+        <i class="material-icons">add_circle</i> 
         Mohon
     </div>		
 </div>
 
 <div class="mobile-bottom-nav__item <?= ($this_file == "profil.php") ? "mobile-bottom-nav__item--active" : "" ?>">
     <div class="mobile-bottom-nav__item-content" onclick="window.location.href='<?=$site_url?>logout.php';">
-        <i class="material-icons">exit_to_app</i> <!-- Changed to exit_to_app -->
+        <i class="material-icons">exit_to_app</i> 
         Log Keluar
     </div>		
 </div>

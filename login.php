@@ -90,8 +90,7 @@ if ($submitted) {
 <? require_once $lib_base . "notification.lib"; ?>
 <div class="center" style="padding-top: 2%">
 	<h1>SELAMAT DATANG</h1>
-	<p style="font-size: 25px;margin-bottom: 2px;">PENTADBIRAN MADRASAH DARUSSAKINAH<br>
-Kg Durian Merotai Besar 91008 Tawau.
+	<p style="font-size: 25px;margin-bottom: 2px;">Alamat
 
 </p>
 </div>

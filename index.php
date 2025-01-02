@@ -6,10 +6,8 @@ $page_name = "Halaman Utama";
 include_once('header.php');
 
 
-// Initialize variables for error or success messages
 $loginError = "";
 
-// Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Get input values
@@ -39,24 +37,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <style>
     body{
-    background-image:url(https://sppmadas.com.my/admin/islamic-bg.jpg);
+    background-image:url("background-image.jpg");
     background-size:cover;
 }
 </style>
 
 
 <div class="container d-flex justify-content-center align-items-center" style="flex-direction: column;">
-    <img src="https://sppmadas.com.my/admin/logo.png" class="login-logo center">
+    <img src="logo.png" class="login-logo center">
     <div class="text-center mt-3 mb-3" style="padding-top: 2%">
 	<h1>SELAMAT DATANG</h1>
-	<h1><b>Sistem e-Cuti Muamalat</b></h1>
-      <p>  Madrasah Darussakinah Tawau
-    </p>
+	<h1><b>Sistem e-Cuti</b></h1>
 </div>
     <div class="login-container">
         <form action="#" method="POST">
             <h2>Log Masuk</h2>
-                        <!-- Display error message if any -->
             <?php if (!empty($loginError)): ?>
                 <div class="error"><?php echo $loginError; ?></div>
             <?php endif; ?>

@@ -1,12 +1,8 @@
 <?php
-// error_reporting(E_ALL);
-// ini_set('display_errors', 1);
 
 $page_name = "Halaman Utama";
 include_once('header.php');
 include_once('nav.php');
-// 	require_once "__config.php";
-// 	require_once "../header.lib";
 $update = "";
 $error = "";
 
@@ -75,7 +71,7 @@ $error = "";
                     $sql = mq("SELECT * FROM leave_request WHERE employee_id = " . get("id") . " AND YEAR(created_dt) = $selected_year ORDER BY id DESC");
 
                     while ($lr = mfa($sql)) {
-                        $hash = md5("e-cutiMuamalat" . $lr['id']);
+                        $hash = md5("yourhash" . $lr['id']);
                     ?>
                     <tr class="row-status-<?=$lr['status']?>" onclick="window.location.href='<?= $site_url ?>senarai_permohonan_terperinci.php?id=<?= $lr['id'] ?>&h=<?= $hash ?>';">
                         <td><? if($lr['read_new'] ==1){  ?><div style="padding:4px; background-color: #f8d7da; border-radius:5px; color: #721c24; width:30px">1</div> <? }?></td>

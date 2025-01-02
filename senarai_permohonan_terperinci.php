@@ -1,23 +1,19 @@
 <?php
-// error_reporting(E_ALL);
-// ini_set('display_errors', 1);
 
 $page_name = "Halaman Utama";
 include_once('header.php');
 include_once('nav.php');
-// 	require_once "__config.php";
-// 	require_once "../header.lib";
+
 $update = "";
 $error = "";
 
 $leave_id = frm('id');
 $hash = frm('h');
-$correct_hash = md5("e-cutiMuamalat" . $leave_id);
-// echo $hash . "<br>" . $correct_hash;
+$correct_hash = md5("yourhash" . $leave_id);
 
 if ($hash != $correct_hash){
-     session_unset(); // Unset all session variables
-    session_destroy(); // Destroy the session
+     session_unset(); 
+    session_destroy();
     
     go($site_url);
     exit();
@@ -38,7 +34,7 @@ if($rsx["read_new"] == 1){
         <div class="leave-details">
             <table class="table table-bordered">
                 <tr>
-                    <th style="width:50%">Nama Asatizah</th>
+                    <th style="width:50%">Nama Kakitangan</th>
                     <td><?= get('name') ?></td>
                 </tr>
                 <tr>
